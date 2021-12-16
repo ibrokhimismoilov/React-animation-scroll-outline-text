@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  min-width: 1400;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: #000;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, transparent, red);
+  width: 5px;
+  border-radius: 20px;
+  transition: 0.1s linear;
+}
+
+.section {
+  background: #000;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.page-wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 200vh;
+  width: 100%;
+  background: #000;
+  padding-bottom: 100vh;
+
+  img {
+    position: absolute;
+    height: 100vh;
+    object-fit: contain;
+    top: 80%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -55%);
+    transition: all 0.2s linear;
+  }
+
+  .text-parent {
+    position: absolute;
+    top: 80%;
+
+    &:first-of-type {
+      z-index: 1;
+      h1 {
+        background-image: linear-gradient(to left, transparent, red);
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    &:last-of-type {
+      z-index: 3;
+    }
+
+    h1 {
+      color: transparent;
+      line-height: 1.1;
+      font-size: 8vw;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: sequel, sans-serif;
+      transition: all 0.2s linear;
+
+      &.outline {
+        -webkit-text-stroke: 3px #f00;
+      }
+      &:last-of-type {
+        margin-left: -50%;
+      }
+    }
+  }
+}
