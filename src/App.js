@@ -41,7 +41,7 @@ const App = () => {
       <div className="page-wrapper">
         <div className="text-parent">
           <h1 style={heading1}>
-            Ibrokhim Ismoilov Ibrokhim Ismoilov Ibrokhim Ismoilov Ibrokhim Ismoilov
+            HTML CSS JAVASCRIPT BOOTSTRAP SASS LESS STYLUS JQUERY REACT REDUX
           </h1>
           <h1 style={heading2}>
             Frontend Developer Frontend Developer Frontend Developer Frontend Developer
@@ -50,7 +50,7 @@ const App = () => {
         <img src={img} alt="" style={imgStyle} />
         <div className="text-parent">
           <h1 className="outline" style={heading1}>
-            Ibrokhim Ismoilov Ibrokhim Ismoilov Ibrokhim Ismoilov Ibrokhim Ismoilov
+            HTML CSS JAVASCRIPT BOOTSTRAP SASS LESS STYLUS JQUERY REACT REDUX
           </h1>
           <h1 className="outline" style={heading2}>
             Frontend Developer Frontend Developer Frontend Developer Frontend Developer
