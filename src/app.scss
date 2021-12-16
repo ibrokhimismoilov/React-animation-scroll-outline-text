@@ -79,6 +79,10 @@ body {
 
       &.outline {
         -webkit-text-stroke: 3px #f00;
+
+        @media (max-width: 767px) {
+          -webkit-text-stroke: 1px #f00;
+        }
       }
       &:last-of-type {
         margin-left: -50%;
