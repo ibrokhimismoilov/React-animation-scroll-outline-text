@@ -20,7 +20,7 @@ const useScrollPosition = () => {
 }
 
 
-export default () => {
+const App = () => {
   const scrollPos = useScrollPosition();
 
   const imgStyle = {
@@ -61,3 +61,4 @@ export default () => {
     </>
   );
 }
+export default App;
