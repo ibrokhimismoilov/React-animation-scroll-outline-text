@@ -48,6 +48,11 @@ body {
     z-index: 2;
     transform: translate(-50%, -55%);
     transition: all 0.2s linear;
+
+    @media (max-width: 767px) {
+      height: initial;
+      width: 60vh;
+    }
   }
 
   .text-parent {
